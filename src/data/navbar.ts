@@ -17,8 +17,4 @@ export const options: NavbarOptions[] = [
     id: 4,
     name: 'Experience',
   },
-  {
-    id: 5,
-    name: 'Contact',
-  },
 ];
