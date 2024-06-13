@@ -1,14 +1,27 @@
-import css_image from '../assets/css_image.png';
+type ExperienceCardProps = {
+  image: string;
+  name: string;
+  color: string;
+};
 
-export default function ExperienceCard() {
+export default function ExperienceCard({
+  name,
+  image,
+  color,
+}: ExperienceCardProps) {
   return (
-    <div className="shadow-md shadow-b-8xl shadow-blue-300  w-[250px] h-[200px] flex flex-col  hover:scale-105 duration-300">
-      <div className="flex flex-col justify-center items-center">
+    <div
+      className={`shadow-md shadow-b-8xl   w-[200px] h-[200px] flex flex-col  hover:scale-105 duration-300 ${color}`}
+    >
+      <div
+        className="flex flex-col justify-evenly
+      items-center h-full w-full"
+      >
         <img
-          src={css_image}
-          className="rounded-lg hover:scale-105 duration-300 w-[250] h-[100px] pt-8"
+          src={image}
+          className="rounded-lg hover:scale-105 duration-300 max-w-[100px] max-h-[100px] pt-4"
         />
-        <p className="pt-16">CSS</p>
+        <p className="pt-4">{name}</p>
       </div>
     </div>
   );

@@ -1,8 +1,10 @@
 import PortfolioItem from './PortfolioItem';
+
 import { Element } from 'react-scroll';
+
 export default function Portfolio() {
   return (
-    <Element name="Portfolio">
+    <Element id="Portfolio" name="Portfolio">
       <div className="w-full bg-gradient-to-b from-slate-800 to-slate-700 pt-[90px] text-white md:h-screen pb-8">
         <div className="flex flex-col mx-auto py-4 max-w-screen-lg justify-center w-full h-full">
           <div className="pb-8">

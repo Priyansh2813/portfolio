@@ -1,14 +1,19 @@
 import { MdOutlineKeyboardArrowRight } from 'react-icons/md';
 import imageHome from '../assets/home.png';
 import { Element } from 'react-scroll';
+import { Link } from 'react-scroll';
+
 export default function Home() {
   return (
     <Element name="Home">
-      <div className="h-screen w-full bg-gradient-to-b from-slate-800 to-slate-700 pt-[80px]">
-        <div className="flex justify-center mx-auto h-full flex-col max-w-screen-lg px-4 items-center md:flex-row  ">
+      <div
+        id="Home"
+        className="h-screen w-full bg-gradient-to-b from-slate-800 to-slate-700 pt-[80px] "
+      >
+        <div className="flex justify-center mx-auto h-full flex-col max-w-screen-lg px-4 items-center md:flex-row  animate-slidein">
           <div className="flex flex-col pt-[80px] justify-center items-centermd:flex-col md:pt-0 ">
             <h2 className="text-4xl sm:text-7xl text-white font-bold ">
-              I'm a Full Stack Developer
+              I'm a FullStack Developer
             </h2>
             <p className="max-w-md py-4 text-slate-400 font-semi">
               I have x years of experience building and designing software.
@@ -16,12 +21,14 @@ export default function Home() {
               like.....
             </p>
             <div>
-              <button className=" group flex justify-evenly items-center w-[150px] h-[50px] bg-gradient-to-r from-slate-500 via-slate-500 to-slate-300 rounded-lg hover:scale-105 ">
-                Portfolio
-                <span className="group-hover:rotate-90 duration-300">
-                  <MdOutlineKeyboardArrowRight size={35} />
-                </span>
-              </button>
+              <Link to="Portfolio" duration={500} smooth>
+                <button className=" group flex justify-evenly items-center w-[150px] h-[50px] bg-gradient-to-r from-slate-500 via-slate-500 to-slate-300 rounded-lg hover:scale-105 ">
+                  Portfolio
+                  <span className="group-hover:rotate-90 duration-300">
+                    <MdOutlineKeyboardArrowRight size={35} />
+                  </span>
+                </button>
+              </Link>
             </div>
           </div>
           <div>
