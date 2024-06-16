@@ -2,11 +2,8 @@ import { Element } from 'react-scroll';
 
 export default function About() {
   return (
-    <Element name="About">
-      <div
-        id="About"
-        className="h-screen w-full bg-gradient-to-b to-slate-800 from-slate-700  text-white"
-      >
+    <Element name="About" id="About" className="section">
+      <div className="h-screen w-full bg-gradient-to-b to-slate-800 from-slate-700  text-white">
         <div className="flex flex-col justify-center max-w-screen-lg w-full h-full mx-auto ">
           <div className="pb-8">
             <p className="text-4xl font-bold inline border-b-4 border-gray-500">

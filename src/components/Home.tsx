@@ -5,11 +5,8 @@ import { Link } from 'react-scroll';
 
 export default function Home() {
   return (
-    <Element name="Home">
-      <div
-        id="Home"
-        className="h-screen w-full bg-gradient-to-b from-slate-800 to-slate-700 pt-[80px] "
-      >
+    <Element name="Home" id="Home" className="section">
+      <div className="h-screen w-full bg-gradient-to-b from-slate-800 to-slate-700 pt-[30px] ">
         <div className="flex justify-center mx-auto h-full flex-col max-w-screen-lg px-4 items-center md:flex-row  animate-slidein">
           <div className="flex flex-col pt-[80px] justify-center items-centermd:flex-col md:pt-0 ">
             <h2 className="text-4xl sm:text-7xl text-white font-bold ">

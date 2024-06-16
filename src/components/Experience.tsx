@@ -12,11 +12,8 @@ import {
 
 export default function Experience() {
   return (
-    <Element name="Experience">
-      <div
-        id="Experience"
-        className="w-full bg-gradient-to-b to-slate-800 from-slate-700 pt-[70px] text-white md:h-screen pb-8"
-      >
+    <Element id="Experience" name="Experience" className="section">
+      <div className="w-full bg-gradient-to-b to-slate-800 from-slate-700 pt-[30px] text-white md:h-screen pb-8">
         <div className="flex flex-col mx-auto py-4 max-w-screen-lg justify-center w-full h-full">
           <div className="pb-8">
             <p className="text-4xl border-b-4 border-gray-500 inline font-bold mt-4">

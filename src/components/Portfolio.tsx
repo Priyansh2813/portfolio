@@ -4,8 +4,8 @@ import { Element } from 'react-scroll';
 
 export default function Portfolio() {
   return (
-    <Element id="Portfolio" name="Portfolio">
-      <div className="w-full bg-gradient-to-b from-slate-800 to-slate-700 pt-[90px] text-white md:h-screen pb-8">
+    <Element id="Portfolio" name="Portfolio" className="section">
+      <div className="w-full bg-gradient-to-b from-slate-800 to-slate-700 pt-[30px] text-white md:h-screen pb-8">
         <div className="flex flex-col mx-auto py-4 max-w-screen-lg justify-center w-full h-full">
           <div className="pb-8">
             <p className="text-4xl border-b-4 border-gray-500 inline font-bold">
