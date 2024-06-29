@@ -6,9 +6,10 @@ import IconTray from './components/IconTray';
 import Navbar from './components/Navbar';
 import Portfolio from './components/Portfolio';
 import PageIcons from './components/PageIcons';
+import { Toaster } from 'react-hot-toast';
 
 export default function App() {
-  const [currentSection, setCurrentSection] = useState<string>('');
+  const [currentSection, setCurrentSection] = useState<string>('Home');
 
   useEffect(() => {
     const handleScroll = () => {
@@ -41,6 +42,7 @@ export default function App() {
       <About />
       <Portfolio />
       <Experience />
+      <Toaster />
     </div>
   );
 }

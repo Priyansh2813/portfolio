@@ -14,9 +14,9 @@ export default function Home() {
               <TypeAnime />
             </h2>
             <p className="max-w-md py-4 text-slate-400 font-semi">
-              I have x years of experience building and designing software.
+              I love the experience of building and designing software.
               Currently, I love to work on web application using technologies
-              like.....
+              like ReactJS, NodeJS, TypeScript, JavaScript..
             </p>
             <div>
               <Link to="Portfolio" duration={500} smooth>

@@ -26,7 +26,9 @@ export default function About() {
             balanced and inspired. Thank you for visiting my portfolio. I'm
             excited about the possibility of collaborating on innovative
             projects and making a positive impact through technology.
-            <br /> Feel free to{' '}
+            <br />
+            <br />
+            Feel free to{' '}
             <span className="underline underline-offset-8">
               priyanshpandey@gmail.com
             </span>{' '}

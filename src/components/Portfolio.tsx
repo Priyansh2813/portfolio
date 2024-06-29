@@ -1,5 +1,5 @@
 import PortfolioItem from './PortfolioItem';
-
+import { projectData } from '../data/project';
 import { Element } from 'react-scroll';
 
 export default function Portfolio() {
@@ -13,13 +13,19 @@ export default function Portfolio() {
             </p>
             <p className="py-6">Look At My Awesome Projects</p>
           </div>
-          <div className="grid   sm:px-0  sm:grid-cols-2 md:grid-cols-3  px-12 gap-8 ">
-            <PortfolioItem />
-            <PortfolioItem />
-            <PortfolioItem />
-            <PortfolioItem />
-            <PortfolioItem />
-            <PortfolioItem />
+          <div className="grid   sm:px-0  sm:grid-cols-2 md:grid-cols-3  px-12 gap-8  ">
+            {projectData.map((project) => {
+              return (
+                <PortfolioItem
+                  description={project.description}
+                  image={project.image}
+                  key={project.id}
+                  name={project.name}
+                  gitHub={project.gitHub}
+                  host={project.host}
+                />
+              );
+            })}
           </div>
         </div>
       </div>
